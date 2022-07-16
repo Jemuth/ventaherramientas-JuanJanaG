@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Expertools, herramientas para expertos</title>
+</head>
+
+<body>
+    <header>
+        <!-- Barra superior -->
+        <div class="contenedorBotones">
+            <div class="botonesImg">
+                <img src="../img/login.png" alt="iniciarSesion">
+                <img src="../img/cart.png" alt="carro">
+                <img src="../img/ayuda.png" alt="ayuda">
+            </div>
+            <div class="botonesLink">
+                <a href="iniciarsesion.html">Iniciar sesion</a>
+                <a href="vercarro.html">Ver carro</a>
+                <a href="ayuda.html">Ayuda</a>
+            </div>
+        </div>
+        <!-- Banner y logo -->
+        <div class="bannerFondo">
+            <div class="logoPrincipal">
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="Logo">
+                </a>
+            </div>
+        </div>
+        <!-- Barra de navegacion -->
+        <div class="contenedorNav">
+            <nav class="navegacion">
+                <a href="../index.html">Inicio</a>
+                <a href="categorias.html">Categorias</a>
+                <a href="marcas.html">Marcas</a>
+                <a href="novedades.html">Novedades</a>
+                <a href="ofertas.html">Ofertas</a>
+                <a href="catalogos.html">Catalogos</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="busquedaAyuda">
+            <p class="tituloPagina">Ayuda</p>
+            <input class="barraBuscar" type="text" placeholder="Buscar...">
+        </div>
+        <div class="temasAyuda">
+            <p class="tituloAyuda">Preguntas frecuentes</p>
+            <ul class="listaTemas">
+                <li> <button type="button" class="desplegar">Tema 1</button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi augue, consectetur sit
+                            amet risus ac, tincidunt pretium dui. Fusce vulputate semper libero sodales eleifend. Etiam
+                            et neque fringilla nunc varius finibus. Praesent fringilla diam eu orci laoreet elementum.
+                            Fusce dapibus justo vitae justo mattis viverra. Praesent eleifend metus quis sagittis
+                            efficitur. Donec bibendum vel velit ut faucibus. Aliquam non erat est. </p>
+                    </div>
+                </li>
+                <li>
+                    <button type="button" class="desplegar">Tema 2</button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi augue, consectetur sit
+                            amet risus ac, tincidunt pretium dui. Fusce vulputate semper libero sodales eleifend. Etiam
+                            et neque fringilla nunc varius finibus. Praesent fringilla diam eu orci laoreet elementum.
+                            Fusce dapibus justo vitae justo mattis viverra. Praesent eleifend metus quis sagittis
+                            efficitur. Donec bibendum vel velit ut faucibus. Aliquam non erat est. </p>
+                    </div>
+                </li>
+                <li>
+                    <button type="button" class="desplegar">Tema 3</button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi augue, consectetur sit
+                            amet risus ac, tincidunt pretium dui. Fusce vulputate semper libero sodales eleifend. Etiam
+                            et neque fringilla nunc varius finibus. Praesent fringilla diam eu orci laoreet elementum.
+                            Fusce dapibus justo vitae justo mattis viverra. Praesent eleifend metus quis sagittis
+                            efficitur. Donec bibendum vel velit ut faucibus. Aliquam non erat est. </p>
+                    </div>
+                </li>
+                <li>
+                    <button type="button" class="desplegar">Tema 4</button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi augue, consectetur sit
+                            amet risus ac, tincidunt pretium dui. Fusce vulputate semper libero sodales eleifend. Etiam
+                            et neque fringilla nunc varius finibus. Praesent fringilla diam eu orci laoreet elementum.
+                            Fusce dapibus justo vitae justo mattis viverra. Praesent eleifend metus quis sagittis
+                            efficitur. Donec bibendum vel velit ut faucibus. Aliquam non erat est. </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <!-- Formulario de subscripcion -->
+        <div class="formulario">
+            <div class="contenedorSub">
+                <p>Subscribete para recibir ofertas y novedades</p>
+            </div>
+            <form action="#">
+                <!-- Ingresar nombre -->
+                <label for="nombre">Nombre</label><br>
+                <input type="text" id="nombre" name="nombre" value="Ingresa tu nombre"><br>
+                <!-- Ingresar email -->
+                <label for="mail">Email</label><br>
+                <input type="email" id="mail" name="mail" value="Ingresa tu email"><br>
+                <!-- Seleccionar interes -->
+                <label for="interes">Area de interes</label><br>
+                <select name="interes" id="interes">
+                    <optgroup label="Seleccione su area de interes">
+                        <option value="carpinteria">Carpinteria</option>
+                        <option value="metalmecanico">Metal-Mecanica</option>
+                        <option value="seguridad">Implementos de seguridad</option>
+                        <option value="almacenamiento">Almacenamiento</option>
+                    </optgroup>
+                </select><br>
+                <!-- Recibir promociones adicionales -->
+                <label for="promociones">Deseo recibir ofertas de sitios asociados</label><br>
+                <input type="checkbox" value><br>
+                <!-- Boton para enviar -->
+                <input class="botonEnviar" type="submit" value="Enviar">
+            </form>
+        </div>
+        <!-- Redes sociales -->
+        <div class="contenedorRedes">
+            <p class="parrafoPie">Siguenos en nuestras redes sociales</p>
+            <ul>
+                <div class="contenedorLista">
+                    <li><a href="#"><img src="../img/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="../img/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="../img/youtube.png" alt="Youtube"></a></li>
+                </div>
+            </ul>
+        </div>
+        <!-- Sobre nosotros -->
+        <section class="contacto">
+            <p class="parrafoPie">Sobre nosotros</p>
+            <ul>
+                <li><a href="ayuda.html">Nuestra mision</a></li>
+                <li><a href="ayuda.html">Sucursales</a></li>
+                <li><a href="ayuda.html">Preguntas frecuentes</a></li>
+                <li><a href="ayuda.html">Servicio al cliente</a></li>
+                <li><a href="ayuda.html">Contacto</a></li>
+            </ul>
+        </section>
+        <!-- Copyright -->
+        <div class="copyright">
+            <p class="bold">© Copyright 2022 expertools.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,1090 @@
+
+:root {
+    --naranja: rgb(203, 102, 28);
+}
+
+/** Generales **/
+
+a:hover, a:active, a:visited, a:link {
+    text-decoration: none; 
+}
+a {
+    font-weight: bold;
+}
+p.bold {
+    font-weight: bold;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    }
+
+/** Header **/
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    
+}
+/** Barra superior **/
+
+.contenedorHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: var(--naranja);
+    align-items: center;
+}
+.contenedorHeader a{
+    color: black;
+}
+.headerLogo {
+    padding: 1rem 1rem 1rem 2rem;
+}
+.headerLogo img {
+    width: 15rem;
+    height: 12rem;
+}
+.headerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem 1rem 1rem 2rem;
+    font-size: 1.8rem;
+}
+.headerLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items:center;
+}
+.headerCarro {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.headerAyuda {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+@media only screen and (max-width: 600px) {
+    .contenedorHeader {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem 1rem 1rem;
+        background-color: var(--naranja);
+        align-items: center;
+    }
+    .headerLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 1rem 1rem 1rem 2rem;
+        font-size: 1.8rem;
+        border: black solid;
+        color: var(--naranja);
+        width: 100%;
+        border-radius: 1rem;
+    }
+}
+
+/** Banner **/
+
+.banner {
+    background-image: url("../img/headerbackground.jpg");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    justify-content: start;
+}
+.banner img {
+    width: 20rem;
+    height: 17rem;
+    padding: 2rem 1rem 1rem 1rem;
+}
+@media only screen and (max-width: 600px) {
+    .banner {
+        background-image: url("../img/headerbackground.jpg");
+        background-size: 100% 100%;
+        width: 100%;
+        height: 30rem;
+        display: flex;
+        justify-content: start;
+    }
+    .banner img {
+        display: none;
+    }
+}
+/** Barra de navegacion **/
+
+.contenedorNav {
+    background-color: black;
+    width: 100%;
+    height: 10rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.contenedorNav nav{
+    background-color: black;
+    width: 100%;
+    height: 10rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.contenedorNav a {
+    font-size: 3rem;
+    border: var(--naranja) solid 2px ;
+    border-radius: 1rem;
+    color:var(--naranja);
+    padding: 1rem 1rem 1rem 1rem;
+    margin:auto;
+}
+@media only screen and (max-width: 600px) {
+    .contenedorNav {
+        background-color: black;
+        width: 100%;
+        height: auto;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .contenedorNav nav{
+        background-color: black;
+        width: 100%;
+        height: auto;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .contenedorNav a {
+        font-size: 2.5rem;
+        border: var(--naranja) solid 2px ;
+        border-radius: 1rem;
+        color:var(--naranja);
+        padding: 1rem 1rem 1rem 1rem;
+    }
+}
+
+
+/** Main Index **/
+
+main {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/** Seccion de ofertas en main **/
+
+.containerOfertas h2 {
+    font-size: 4rem;
+    color: var(--naranja);
+}
+.containerOfertas{
+    background-color: black;
+    display: flex;
+    padding-top: 5rem;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    width: 100%;
+    height: 70rem;
+}
+.cardsOfertas {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+@media only screen and (max-width: 600px) {
+    .containerOfertas h2 {
+        font-size: 3rem;
+        width: 100%;
+        background-color: var(--naranja);
+        color: black;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+    .containerOfertas{
+        background-color: black;
+        display: flex;
+        padding-top: 5rem;
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .cardsOfertas {
+        display: flex;
+        flex-direction: column;
+        gap: 20rem;
+    }
+    .containerOfertas .verMas a{
+        color: rgb(203, 102, 28);
+        font-size: 3rem;
+        padding: 1rem 1rem 1rem 1rem;
+        border: rgb(203, 102, 28) solid 0.6rem;
+        border-radius: 2rem;
+    }
+    .containerOfertas .verMas {
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+    }
+}
+
+/* Animacion importada */
+
+ .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    /** border: 1px solid #f1f1f1; **/
+    perspective: 1000px;
+  }
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+.flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+  } 
+.containerOfertas .verMas a{
+    color: rgb(203, 102, 28);
+    font-size: 3rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border: rgb(203, 102, 28) solid 0.6rem;
+    border-radius: 2rem;
+}
+.containerOfertas .verMas {
+    padding-top: 10rem;
+}
+
+/** Seccion de marcas en main **/
+
+.contenedorMarcas {
+    background-color: var(--naranja);
+    display: flex;
+    padding-top: 5rem;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    width: 100%;
+    height: 50rem;
+}
+.contenedorMarcas h2 {
+    font-size: 4rem;
+    color: black
+}
+.contenedorMarcas .verMas a {
+    color: black;
+    font-size: 3rem;
+    width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+    border: black solid 0.6rem;
+    border-radius: 2rem;
+}
+.marcas {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.imgMarcas1 {
+    width: 60rem;
+    height: 17rem;
+    background: url("../img/makita.jpg") no-repeat;
+    background-size: contain;
+    }
+.imgMarcas1:hover {
+    width: 60rem;
+    height: 17rem;
+    background: url("../img/makitahover.jpg") no-repeat;
+    background-size: contain;
+}
+.imgMarcas2 {
+    width: 60rem;
+    height: 17rem;
+    background: url("../img/bauker.jpg") no-repeat;
+    background-size: contain;
+}
+.imgMarcas2:hover {
+    width: 60rem;
+    height: 17rem;
+    background: url("../img/baukerhover.jpg") no-repeat;
+    background-size: contain;
+}
+.imgMarcas3 {
+    width: 60rem;
+    height: 17rem;
+    background: url("../img/b&d.jpg") no-repeat;
+    background-size: contain;
+}
+.imgMarcas3:hover {
+    width: 60rem;
+    height: 17rem;
+    background: url("../img/b&dhover.jpg") no-repeat;
+    background-size: contain;
+}
+@media only screen and (max-width: 600px) {
+    .marcas {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 60rem;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 2rem;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .contenedorMarcas {
+        background-color: var(--naranja);
+        display: flex;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 80rem;
+    }
+    .contenedorMarcas .verMas a {
+        color: black;
+        font-size: 3rem;
+        width: 100%;
+        border: black solid 0.6rem;
+        border-radius: 2rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/** Seccion de categorias en main **/
+
+.contenedorCategorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    height: 80rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.contenedorCategorias h2{
+    color: var(--naranja);
+    padding-bottom: 20px;
+    font-size: 4rem;
+}
+.imgCategorias {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+.imgCategorias img{
+    border: var(--naranja) solid 2rem;
+    width: auto;
+    height: auto;
+    border-radius: 5rem;
+    width: auto;
+    height: 40rem;
+}
+.linkCategorias {
+    color: rgb(203, 102, 28);
+    font-size: 3rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border: var(--naranja) solid 0.6rem;
+    border-radius: 2rem;
+}
+@media only screen and (max-width: 600px) {
+    .imgCategorias {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: 3rem;
+    }
+    .imgCategorias img{
+        border: var(--naranja) solid 2rem;
+        width: 25rem;
+        height: 25rem;
+        border-radius: 5rem;
+        width: auto;
+    }
+    .contenedorCategorias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        background-color: black;
+        text-align: center;
+        width: 100%;
+        height: 110rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .contenedorCategorias h2{
+        color: var(--naranja);
+        padding-bottom: 20px;
+        font-size: 3rem;
+    }
+}
+/** Reseña de servicios **/
+
+.contenedorPresentacion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 5rem;
+}
+.contenedorPresentacion h1{
+    font-size: 5rem;
+    font-weight: bold;
+}
+.presentacion {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+    align-items: center;
+}
+.resena {
+    width: 50%;
+    font-size: 2rem;
+    text-align: justify;
+    padding: 2rem 2rem 2rem 2rem;
+}
+@media only screen and (max-width: 600px) {
+    .contenedorPresentacion {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding-top: 5rem;
+    }
+    .contenedorPresentacion h1{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding-top: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 3rem;
+        align-items: center;
+    }
+    .resena {
+        width: 80%;
+        font-size: 2rem;
+        text-align: justify;
+        padding: 1rem;
+    }
+    .contenedorVideo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/** Medios de pago **/
+
+.mediosPago {
+    text-align: center;
+}
+.mediosPago img {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/** Footer **/
+
+footer {
+    padding-top: 60px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(203, 102, 28);
+    color: black;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+.formulario p {
+    color: black;
+    font-size: 3rem;
+    width: 100%;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1,6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+select {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.botonEnviar {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 1.6rem;
+    padding: 2rem 2rem 2rem 2rem;
+    background-color: black;
+    color: var(--naranja);
+}
+
+/** Redes sociales **/
+
+.contenedorRedes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    background-color: black;
+    color: var(--naranja);
+}
+.contenedorLista{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/** Contacto **/
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    background-color: black;
+    color: var(--naranja);
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+.contactoLista {
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    justify-content: center;
+    list-style-type: none;
+}
+.contactoLista a {
+    color: var(--naranja);
+    font-size: 1.6rem;
+}
+.parrafoPie {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+/** Copyright **/
+
+.copyright {
+    background-color: black;
+    color: rgb(203, 102, 28);
+    padding-bottom: 30px;
+}
+
+/** Pagina Categorias **/
+
+.contenedorBusqueda {
+    width: auto;
+    height: 1200px;
+    padding-top: 80px;
+    background-color: black;
+    text-align: middle;
+}
+.barraBuscar{
+    margin-top: 50px;
+    margin-left: 550px;
+    width: 600px;
+}
+.filtros {
+    margin-left: 00px;
+    margin-right: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+    width: 1000px;
+    height: 50px;
+    text-align: center;
+}
+.filtros li a{
+    padding-left: 30px;
+    color: rgb(203, 102, 28);
+    padding-right: 30px;
+    text-decoration: none;
+}
+.contenedorBusqueda {
+    height: 800px;
+}
+.contenedorBusqueda li {
+    float: left;
+    list-style: none;
+}
+.contenedorObjeto {
+    text-align: center;
+    width: 300px;
+}
+.contenedorObjeto p{
+    color: rgb(203, 102, 28);
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.listaCategorias{
+    margin-left: 300px;
+}
+.tituloPagina {
+    margin-left: 700px;
+    margin-right: 700px;
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(203, 102, 28) ;
+}
+.contenedorProductos {
+    height: 800px;
+    background-color: black;
+}
+.contenedorItem {
+    height: 370px;
+    width: 250px;
+    margin-right: 20px;
+}
+.contenedorItem a{
+    background-color: white;
+}
+.listaItems{
+    margin-left: 200px;
+}
+.listaItems li {
+    float: left;
+    list-style-type: none;
+}
+.encabezado {
+    text-align: center;
+    background-color: rgb(203, 102, 28);
+}
+.encabezado p {
+    color: black;
+    font-weight: bold;
+}
+.bajada {
+    text-align: center;
+    background-color: rgb(203, 102, 28);
+}
+.bajada p {
+    color: black;
+    font-weight: bold;
+}
+
+/** Pagina Marca **/
+
+.descripcionMarca {
+    height: 800px;
+    background-color: black;
+    text-align: center;
+}
+.fichaMarca {
+    background-color: rgb(203, 102, 28);
+    width: 500px;
+    padding: 10px 10px 10px 10px;
+    height: 300px;
+    margin-left: 665px;
+}
+.fichaMarca p {
+    padding-bottom: 60px;
+}
+.fichaMarca a{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+/** Pagina Novedades **/
+
+.destacado {
+    margin-left: 410px;
+}
+.destacado img {
+    width: 120%;
+    height: 110%;
+}
+.destacado p{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-left: 80px;
+    font-size: 30px;
+    color: rgb(203, 102, 28);
+    border: rgb(203, 102, 28) solid 5px;
+    border-radius: 10px;
+}
+
+/** Pagina Ofertas **/
+
+/** Barra de busqueda ofertas **/
+
+.busquedaOfertas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    width: 100%;
+    height: 25rem;
+    background-color: black;
+    padding-top: 3rem;
+}
+.barraOfertas {
+    width: 100rem;
+    text-align: center;
+    justify-content: center;
+}
+.barraOfertas input {
+    width: 50rem;
+}
+.busquedaOfertas p {
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--naranja);
+}
+.busquedaOfertas ul {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+.busquedaOfertas li {
+    color: var(--naranja);
+    list-style-type: none;
+    font-size: 2rem;
+    padding-right: 3rem;
+}
+.busquedaOfertas a{
+    padding-right: 2rem;
+}
+@media only screen and (max-width: 600px) {
+    .busquedaOfertas ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding: 1rem;
+    }
+}
+
+/** Destacados en oferta **/
+
+.destacadosOfertas {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: center;
+    padding-top: 3rem;
+    gap: 5rem;
+    width: 100%;
+    height: 40rem;
+}
+.destacadosOfertas li {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    width: 100%;
+}
+.productoDestacado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+}
+.productoDestacado p {
+    color: var(--naranja);
+    font-weight: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+    .destacadosOfertas {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 100%;
+        height: 130rem;
+    }
+    .destacadosOfertas li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 130rem;
+    }
+}
+
+/** Contenedor productos **/
+
+.contenedorOfertas {
+    background-color: black;
+    width: 100%;
+    height: 120rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.productosOferta {
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 0.2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "contenedorOferta1 contenedorOferta2 contenedorOferta3"
+    "contenedorOferta3 contenedorOferta4 contenedorOferta6"
+    "contenedorOferta5 contenedorOferta6 contenedorOferta9"
+}
+@media only screen and (max-width: 600px) {
+    .contenedorOfertas {
+        background-color: black;
+        width: 100%;
+        height: 200rem;
+        display: flex;
+        justify-content: space-evenly;
+}
+.productosOferta {
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 0.2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "contenedorOferta1 contenedorOferta2"
+    "contenedorOferta3 contenedorOferta4"
+    "contenedorOferta5 contenedorOferta6"
+    "contenedorOferta7 contenedorOferta8"
+    "contenedorOferta9"
+}
+}
+/** Contenedor productos en oferta **/
+
+.contenedorOferta {
+    display: flex;
+    flex-direction: column;    
+    width: 20rem;
+    height: 25rem;
+    align-items: center;
+}
+.textoOferta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    background-color: var(--naranja);
+    color: black;
+    width: 100%;
+    padding: 1rem;
+}
+.contenedorOferta img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+/** Pagina Catalogos **/
+
+.descripcionCatalogo {
+    background-color: black;
+    height: 1500px;
+    text-align: center;
+}
+.descripcionCatalogo p {
+    color: black;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.descripcionCatalogo a {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+#tituloCatalogo{
+    color:rgb(203, 102, 28);
+    font-size: 30px;
+    font-weight: bold;
+}
+.fichaCatalogo {
+    background-color: rgb(203, 102, 28);
+    width: 600px;
+    height: 250px;
+    margin-left: 660px;
+}
+
+/** Pagina Iniciar sesion **/
+
+.contenedorSesion {
+    background-color: black;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 40px;
+    padding-left: 30px;
+    color: rgb(203, 102, 28);
+    height: 700px;
+}
+.botonLogear {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    width: 200px;
+    height: 80px;
+    border: rgb(203, 102, 28) solid 5px;
+    border-radius: 20px;
+    background-color: black;
+    color: rgb(203, 102, 28);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.botonCrear {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    width: 400px;
+    height: 80px;
+    border: rgb(203, 102, 28) solid 5px;
+    border-radius: 20px;
+    background-color: black;
+    color: rgb(203, 102, 28);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/** Pagina Ayuda **/
+
+.temasAyuda {
+    background-color: black;
+    height: 800px;
+    padding-left: 50px;
+    color: rgb(203, 102, 28);
+}
+.busquedaAyuda {
+    width: auto;
+    height: 400px;
+    padding-top: 80px;
+    background-color: black;
+    text-align: middle;
+}
+.tituloAyuda {
+    font-size: 40px;
+}
+.listaTemas {
+    padding-top: 20px;
+    font-size: 20px;
+    list-style: none;
+    padding-right: 200px;
+}
+
+/** Pagina Estilo del boton **/
+
+.desplegar {
+    background-color: rgb(203, 102, 28);
+    color: black;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contenedorCarro {
+    text-align: center;
+    background-color: black;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 40px;
+    padding-left: 30px;
+    color: rgb(203, 102, 28);
+    height: 700px;
+}
