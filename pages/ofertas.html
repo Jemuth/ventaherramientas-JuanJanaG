@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 
     <title>Expertools, herramientas para expertos</title>
@@ -14,7 +16,6 @@
     <header>
 
         <!-- Barra superior -->
-
         <div class="contenedorHeader">
             <div class="headerLogo">
                 <a href="../index.html"><img src="../img/logoheader.png" alt="Logo"></a>
@@ -22,37 +23,57 @@
             <div class="headerLinks">
                 <div class="headerLogin">
                     <a href="iniciarsesion.html"><img src="../img/login.png" alt="iniciarSesion"></a>
-                    <a href="../pages/iniciarsesion.html">Iniciar sesion</a>
+                    <a href="iniciarsesion.html">Iniciar sesion</a>
                 </div>
                 <div class="headerCarro">
                     <a href="vercarro.html"><img src="../img/cart.png" alt="carro"></a>
-                    <a href="../pages/vercarro.html">Ver carro</a>
+                    <a href="vercarro.html">Ver carro</a>
                 </div>
                 <div class="headerAyuda">
                     <a href="ayuda.html"><img src="../img/ayuda.png" alt="ayuda"></a>
-                    <a href="../pages/ayuda.html">Ayuda</a>
+                    <a href="ayuda.html">Ayuda</a>
                 </div>
             </div>
         </div>
 
         <!-- Banner -->
-
-        <div class="banner">
-            <img src="../img/logo.png" alt="Logo">
+        <div class="banner container-fluid">
         </div>
 
         <!-- Barra de navegacion -->
-
-        <div class="contenedorNav">
-            <nav>
-                <a href="../index.html">Inicio</a>
-                <a href="categorias.html">Categorias</a>
-                <a href="marcas.html">Marcas</a>
-                <a href="novedades.html">Novedades</a>
-                <a href="ofertas.html">Ofertas</a>
-                <a href="catalogos.html">Catalogos</a>
-            </nav>
-        </div>
+        <nav class="container-fluid navbar navbar-expand-lg navcolor">
+            <div class="col-4 navbarlogo">
+                <a class="navbar-brand w-auto h-auto" href="#"><img class="navbarimg" width="150rem" height="120rem"
+                        src="../img/logo.png" alt="Logo"></a>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse col-8 nav-fill w-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categorias.html">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="marcas.html">Marcas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogos.html">Catalogos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <!-- Main -->
@@ -215,11 +236,9 @@
         </div>
     </main>
     <footer>
-
         <!-- Formulario de subscripcion -->
-
-        <div class="formulario">
-            <div>
+        <div class="formulario container-fluid">
+            <div class="contenedorSub">
                 <p>Subscribete para recibir ofertas y novedades</p>
             </div>
             <form action="#">
@@ -246,10 +265,8 @@
                 <input class="botonEnviar" type="submit" value="Enviar">
             </form>
         </div>
-
         <!-- Redes sociales -->
-
-        <div class="contenedorRedes">
+        <div class="contenedorRedes container-fluid">
             <p class="parrafoPie">Siguenos en nuestras redes sociales</p>
             <ul>
                 <div class="contenedorLista">
@@ -262,14 +279,14 @@
 
         <!-- Sobre nosotros -->
 
-        <section class="contacto">
+        <section class="contacto container-fluid">
             <p class="parrafoPie">Sobre nosotros</p>
             <ul class="contactoLista">
-                <li><a href="./pages/ayuda.html">Nuestra mision</a></li>
-                <li><a href="./pages/ayuda.html">Preguntas frecuentes</a></li>
-                <li><a href="./pages/ayuda.html">Servicio al cliente</a></li>
-                <li><a href="./pages/ayuda.html">Contacto</a></li>
-                <li><a href="./pages/ayuda.html">Sucursales</a></li>
+                <li><a href="ayuda.html">Nuestra mision</a></li>
+                <li><a href="ayuda.html">Sucursales</a></li>
+                <li><a href="ayuda.html">Preguntas frecuentes</a></li>
+                <li><a href="ayuda.html">Servicio al cliente</a></li>
+                <li><a href="ayuda.html">Contacto</a></li>
             </ul>
         </section>
         <!-- Copyright -->
@@ -277,6 +294,9 @@
             <p class="bold">© Copyright 2022 expertools.com</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
