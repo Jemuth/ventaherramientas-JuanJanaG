@@ -212,7 +212,7 @@ main {
     gap: 5rem;
     align-items: center;
     width: 100%;
-    height: 70rem;
+    height: 60rem;
 }
 .cardsOfertas {
     display: flex;
@@ -234,12 +234,10 @@ main {
         border: rgb(203, 102, 28) solid 0.6rem;
         border-radius: 2rem;
     }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .containerOfertas h2 {
         font-size: 3rem;
         width: 100%;
-        background-color: var(--naranja);
-        color: black;
         padding: 2rem;
         border-radius: 1rem;
     }
@@ -330,10 +328,10 @@ main {
 .contenedorMarcas {
     background-color: var(--naranja);
     display: flex;
-    padding-top: 5rem;
+    padding-top: 1rem;
     flex-direction: column;
-    gap: 5rem;
     align-items: center;
+    justify-content: space-evenly;
     width: 100%;
     height: 50rem;
 }
@@ -374,47 +372,49 @@ main {
     height: 17rem;
     background: url("../img/makita.jpg") no-repeat;
     background-size: contain;
+    background-position: center;
     }
 .imgMarcas1:hover {
     width: 60rem;
     height: 17rem;
     background: url("../img/makitahover.jpg") no-repeat;
     background-size: contain;
+    background-position: center;
 }
 .imgMarcas2 {
     width: 60rem;
     height: 17rem;
     background: url("../img/bauker.jpg") no-repeat;
     background-size: contain;
+    background-position: center;
 }
 .imgMarcas2:hover {
     width: 60rem;
     height: 17rem;
     background: url("../img/baukerhover.jpg") no-repeat;
     background-size: contain;
+    background-position: center;
 }
 .imgMarcas3 {
     width: 60rem;
     height: 17rem;
     background: url("../img/b&d.jpg") no-repeat;
     background-size: contain;
+    background-position: center;
 }
 .imgMarcas3:hover {
     width: 60rem;
     height: 17rem;
     background: url("../img/b&dhover.jpg") no-repeat;
     background-size: contain;
+    background-position: center;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
     .marcas {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 60rem;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 2rem;
-        padding: 1rem 1rem 1rem 1rem;
+        height: auto;
     }
     .contenedorMarcas {
         background-color: var(--naranja);
@@ -422,9 +422,9 @@ main {
         padding-top: 5rem;
         padding-bottom: 5rem;
         flex-direction: column;
-        gap: 3rem;
         align-items: center;
-        justify-content: center;
+        text-align: center;
+        justify-content: space-evenly;
         width: auto;
         height: 80rem;
     }
@@ -434,10 +434,95 @@ main {
         width: 100%;
         border: black solid 0.6rem;
         border-radius: 2rem;
-        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    .imgMarcas1 {
+        width: 50rem;
+        height: 14rem;
+        background: url("../img/makita.jpg") no-repeat;
+        background-size: contain;
+        background-position: center;
+        }
+    .imgMarcas1:hover {
+        width: 50rem;
+        height: 14rem;
+        background: url("../img/makitahover.jpg") no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .imgMarcas2 {
+        width: 50rem;
+        height: 14rem;
+        background: url("../img/bauker.jpg") no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .imgMarcas2:hover {
+        width: 50rem;
+        height: 14rem;
+        background: url("../img/baukerhover.jpg") no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .imgMarcas3 {
+        width: 50rem;
+        height: 14rem;
+        background: url("../img/b&d.jpg") no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .imgMarcas3:hover {
+        width: 50rem;
+        height: 14rem;
+        background: url("../img/b&dhover.jpg") no-repeat;
+        background-size: contain;
+        background-position: center;
     }
 }
-
+@media only screen and (max-width: 430px) {
+    .imgMarcas1 {
+        width: 25rem;
+        height: 14rem;
+        background: url("../img/makita.jpg") no-repeat;
+        background-size: contain;
+        background-position: center;
+        }
+    .imgMarcas1:hover {
+        width: 25rem;
+        height: 14rem;
+        background: url("../img/makitahover.jpg") no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .imgMarcas2 {
+        width: 25rem;
+        height: 14rem;
+        background: url("../img/bauker.jpg") no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .imgMarcas2:hover {
+        width: 25rem;
+        height: 14rem;
+        background: url("../img/baukerhover.jpg") no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .imgMarcas3 {
+        width: 25rem;
+        height: 14rem;
+        background: url("../img/b&d.jpg") no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .imgMarcas3:hover {
+        width: 25rem;
+        height: 14rem;
+        background: url("../img/b&dhover.jpg") no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}
 /** Seccion de categorias en main **/
 
 .contenedorCategorias {
@@ -460,25 +545,37 @@ main {
 .imgCategorias {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 2rem;
     padding-bottom: 3rem;
 }
-.imgCategorias img{
-    border: var(--naranja) solid 2rem;
+.categoria1 .categoria2 .categoria3 {
     width: auto;
     height: auto;
-    border-radius: 5rem;
-    width: auto;
-    height: 40rem;
 }
-.linkCategorias {
+.imgCategorias img{
+    border: var(--naranja) solid 2rem;
+    border-radius: 5rem;
+    width: 100%;
+    height: 100%;
+}
+.contenedorCategorias .verCategorias a{
     color: rgb(203, 102, 28);
     font-size: 3rem;
     padding: 1rem 1rem 1rem 1rem;
-    border: var(--naranja) solid 0.6rem;
+    border: rgb(203, 102, 28) solid 0.6rem;
     border-radius: 2rem;
 }
-@media only screen and (max-width: 600px) {
+.contenedorCategorias .verCategorias a:hover{
+    color: black;
+    background-color: var(--naranja);
+    font-size: 3rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border: rgb(203, 102, 28) solid 0.6rem;
+    border-radius: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
     .imgCategorias {
         display: flex;
         flex-direction: column;
@@ -524,6 +621,9 @@ main {
     font-size: 5rem;
     font-weight: bold;
 }
+.contenedorVideo {
+    align-self: flex-start;
+}
 .presentacion {
     display: flex;
     flex-direction: row;
@@ -536,12 +636,13 @@ main {
     align-items: center;
 }
 .resena {
-    width: 50%;
+    width: auto;
     font-size: 2rem;
+    align-self: center;
     text-align: justify;
     padding: 2rem 2rem 2rem 2rem;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1280px) {
     .contenedorPresentacion {
         display: flex;
         flex-direction: column;
