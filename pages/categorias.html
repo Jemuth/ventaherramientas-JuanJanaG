@@ -79,147 +79,53 @@
         </nav>
     </header>
     <main>
-        <div class="contenedorBusqueda">
-            <p class="tituloPagina">Categorias</p>
-            <input class="barraBuscar" type="text" placeholder="Buscar...">
-            <div class="filtros">
-                <ul>
-                    <li><a target="_blank">Filtro 1</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 2</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 3</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 4</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 5</a><input type="checkbox"></li>
-                </ul>
+        <div class="categorias container-fluid">
+            <div class="categoriasTitulo">
+                <h2>Categorias</h2>
             </div>
-            <div class="listaCategorias">
-                <ul>
-                    <li>
-                        <div class="contenedorObjeto">
-                            <a href="#"><img src="../img/accesorios.jpg" alt="accesorios"></a>
-                            <p>Accesorios</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorObjeto">
-                            <a href="#"><img src="../img/electricas.jpg" alt="electricas"></a>
-                            <p>Electricas</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorObjeto">
-                            <a href="#"><img src="../img/manuales.jpg" alt="manuales"></a>
-                            <p>Manuales</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorObjeto">
-                            <a href="#"><img src="../img/epp.jpg" alt="epp"></a>
-                            <p>EPP</p>
-                        </div>
-                    </li>
-                </ul>
+            <div class="busquedaCategorias">
+                <form class="formFlex">
+                    <input class="form-control me-2" type="search" placeholder="Ingresa nombre de producto o marca"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
             </div>
-        </div>
-        <div class="contenedorProductos">
-            <div class="listaItems">
-                <ul>
-                    <li>
-                        <div class="contenedorItem">
-                            <div class="encabezado">
-                                <p>Marca</p>
-                                <p>Tipo de herramienta</p>
-                            </div>
-                            <a href="#"><img src="../img/electricas.jpg" alt="electricas"></a>
-                            <div class="bajada">
-                                <p>$10.000</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorItem">
-                            <div class="encabezado">
-                                <p>Marca</p>
-                                <p>Tipo de herramienta</p>
-                            </div>
-                            <a href="#"><img src="../img/electricas.jpg" alt="electricas"></a>
-                            <div class="bajada">
-                                <p>$10.000</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorItem">
-                            <div class="encabezado">
-                                <p>Marca</p>
-                                <p>Tipo de herramienta</p>
-                            </div>
-                            <a href="#"><img src="../img/electricas.jpg" alt="electricas"></a>
-                            <div class="bajada">
-                                <p>$10.000</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorItem">
-                            <div class="encabezado">
-                                <p>Marca</p>
-                                <p>Tipo de herramienta</p>
-                            </div>
-                            <a href="#"><img src="../img/electricas.jpg" alt="electricas"></a>
-                            <div class="bajada">
-                                <p>$10.000</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorItem">
-                            <div class="encabezado">
-                                <p>Marca</p>
-                                <p>Tipo de herramienta</p>
-                            </div>
-                            <a href="#"><img src="../img/electricas.jpg" alt="electricas"></a>
-                            <div class="bajada">
-                                <p>$10.000</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorItem">
-                            <div class="encabezado">
-                                <p>Marca</p>
-                                <p>Tipo de herramienta</p>
-                            </div>
-                            <a href="#"><img src="../img/electricas.jpg" alt="electricas"></a>
-                            <div class="bajada">
-                                <p>$10.000</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorItem">
-                            <div class="encabezado">
-                                <p>Marca</p>
-                                <p>Tipo de herramienta</p>
-                            </div>
-                            <a href="#"><img src="../img/electricas.jpg" alt="electricas"></a>
-                            <div class="bajada">
-                                <p>$10.000</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorItem">
-                            <div class="encabezado">
-                                <p>Marca</p>
-                                <p>Tipo de herramienta</p>
-                            </div>
-                            <a href="#"><img src="../img/electricas.jpg" alt="electricas"></a>
-                            <div class="bajada">
-                                <p>$10.000</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+            <div class="categoriasCards">
+                <div id="cardCategoria" class="card">
+                    <img src="../img/epp.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">EPP</h5>
+                        <p class="card-text">Equipos de protección personal y seguridad</p>
+                        <a href="ofertas.html" class="botonCategorias btn btn-primary">Ver productos</a>
+                    </div>
+                </div>
+                <div id="cardCategoria" class="card">
+                    <img src="../img/manuales.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Manuales</h5>
+                        <p class="card-text">Herramientas manuales de alta calidad</p>
+                        <a href="ofertas.html" class="botonCategorias btn btn-primary">Ver productos</a>
+                    </div>
+                </div>
+                <div id="cardCategoria" class="card">
+                    <img src="../img/electricas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Eléctricas</h5>
+                        <p class="card-text">Herramientras eléctricas de alta calidad</p>
+                        <a href="ofertas.html" class="botonCategorias btn btn-primary">Ver productos</a>
+                    </div>
+                </div>
+                <div id="cardCategoria" class="card">
+                    <img src="../img/accesorios.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Accesorios</h5>
+                        <p class="card-text">Amplia selección de accesorios y ropa de trabajo</p>
+                        <a href="ofertas.html" class="botonCategorias btn btn-primary">Ver productos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="vermasCategorias">
+                    <a href="ofertas.html">Ver mas</a>
             </div>
         </div>
     </main>

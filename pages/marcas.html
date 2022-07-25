@@ -79,122 +79,138 @@
         </nav>
     </header>
     <main>
-        <div class="contenedorBusqueda">
-            <p class="tituloPagina">Marcas</p>
-            <input class="barraBuscar" type="text" placeholder="Buscar...">
-            <div class="filtros">
-                <ul>
-                    <li><a target="_blank">Filtro 1</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 2</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 3</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 4</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 5</a><input type="checkbox"></li>
-                </ul>
-            </div>
-            <div class="listaCategorias">
-                <ul>
-                    <li>
-                        <div class="contenedorObjeto">
-                            <a href="#"><img src="../img/makitalogo.jpg" alt="accesorios"></a>
-                            <p>Makita</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorObjeto">
-                            <a href="#"><img src="../img/dremel.jpg" alt="electricas"></a>
-                            <p>Dremel</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorObjeto">
-                            <a href="#"><img src="../img/blackdecker.jpg" alt="manuales"></a>
-                            <p>Black & Decker</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorObjeto">
-                            <a href="#"><img src="../img/cat.jpg" alt="epp"></a>
-                            <p>CAT</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="descripcionMarca">
-            <img src="../img/productosmakita.jpg" alt="productosmakita">
-            <div class="fichaMarca">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi augue, consectetur sit amet
-                    risus ac, tincidunt pretium dui. Fusce vulputate semper libero sodales eleifend. Etiam et neque
-                    fringilla nunc varius finibus. Praesent fringilla diam eu orci laoreet elementum. Fusce dapibus
-                    justo vitae justo mattis viverra. Praesent eleifend metus quis sagittis efficitur. Donec bibendum
-                    vel velit ut faucibus. Aliquam non erat est. </p>
-                <a href="catalogos.html">Ver catalogos de esta marca</a>
-            </div>
-        </div>
-        </div>
-    </main>
-    <footer>
-        <!-- Formulario de subscripcion -->
-        <div class="formulario container-fluid">
-            <div class="contenedorSub">
-                <p>Subscribete para recibir ofertas y novedades</p>
-            </div>
-            <form action="#">
-                <!-- Ingresar nombre -->
-                <label for="nombre">Nombre</label><br>
-                <input type="text" id="nombre" name="nombre" value="Ingresa tu nombre"><br>
-                <!-- Ingresar email -->
-                <label for="mail">Email</label><br>
-                <input type="email" id="mail" name="mail" value="Ingresa tu email"><br>
-                <!-- Seleccionar interes -->
-                <label for="interes">Area de interes</label><br>
-                <select name="interes" id="interes">
-                    <optgroup label="Seleccione su area de interes">
-                        <option value="carpinteria">Carpinteria</option>
-                        <option value="metalmecanico">Metal-Mecanica</option>
-                        <option value="seguridad">Implementos de seguridad</option>
-                        <option value="almacenamiento">Almacenamiento</option>
-                    </optgroup>
-                </select><br>
-                <!-- Recibir promociones adicionales -->
-                <label for="promociones">Deseo recibir ofertas de sitios asociados</label><br>
-                <input type="checkbox" value><br>
-                <!-- Boton para enviar -->
-                <input class="botonEnviar" type="submit" value="Enviar">
-            </form>
-        </div>
-        <!-- Redes sociales -->
-        <div class="contenedorRedes container-fluid">
-            <p class="parrafoPie">Siguenos en nuestras redes sociales</p>
-            <ul>
-                <div class="contenedorLista">
-                    <li><a href="#"><img src="../img/facebook.png" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="../img/instagram.png" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="../img/youtube.png" alt="Youtube"></a></li>
+        <main>
+            <div class="marcas container-fluid">
+                <div class="marcasTitulo">
+                    <h2>Marcas</h2>
                 </div>
-            </ul>
-        </div>
+                <div class="busquedaMarcas">
+                    <form class="formFlex">
+                        <input class="form-control me-2" type="search" placeholder="Ingresa nombre de producto o marca"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+                <div class="marcasCards">
+                    <div id="cardMarca" class="cardMarca1 card">
+                        <img src="../img/makitalogo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Makita</h5>
+                            <p class="card-text">Especialista en herramientras eléctricas e inalámbricas a un precio
+                                accesible</p>
+                            <a href="ofertas.html" class="botonCategorias btn btn-primary">Ver productos</a>
+                        </div>
+                    </div>
+                    <div id="cardMarca" class="cardMarca2 card">
+                        <img src="../img/blackdecker.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Black & Decker</h5>
+                            <p class="card-text">Herramientras eléctricas y electrodomésticos de alta calidad</p>
+                            <a href="ofertas.html" class="botonCategorias btn btn-primary">Ver productos</a>
+                        </div>
+                    </div>
+                    <div id="cardMarca" class="cardMarca3 card">
+                        <img src="../img/dremel.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dremel</h5>
+                            <p class="card-text">Referente en herramientas de precisión</p>
+                            <a href="ofertas.html" class="botonCategorias btn btn-primary">Ver productos</a>
+                        </div>
+                    </div>
+                    <div id="cardMarca" class="cardMarca4 card">
+                        <img src="../img/cat.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cat</h5>
+                            <p class="card-text">Accesorios y ropa de trabajo de alta durabilidad</p>
+                            <a href="ofertas.html" class="botonCategorias btn btn-primary">Ver productos</a>
+                        </div>
+                    </div>
+                    <div class="cardMarca5 marcaDestacada container-fluid">
+                        <div class="destacadaLogo container-fluid">
+                            <img src="../img/makita.jpg" alt="Logo makitalogo">
+                        </div>
+                        <div class="tituloDestacada container-fluid">
+                            <h2>Marca destacada del mes</h2>
+                        </div>
+                        <div container-fluid>
+                            <a href="catalogos.html">
+                            <img id="imagenDestacada" src="../img/productosmakita.jpg" alt="Productos Makita">
+                        </a>
+                        </div>
+                        <div class="textoDestacado container-fluid">
+                            <p>Una de las marcas más confiables en cuanto a herramientas eléctricas para trabajos de alto impacto.
+                                Haz click en la imagen para ver el catálogo
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vermasMarcas">
+                    <a href="ofertas.html">Ver mas</a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!-- Formulario de subscripcion -->
+            <div class="formulario container-fluid">
+                <div class="contenedorSub">
+                    <p>Subscribete para recibir ofertas y novedades</p>
+                </div>
+                <form action="#">
+                    <!-- Ingresar nombre -->
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" id="nombre" name="nombre" value="Ingresa tu nombre"><br>
+                    <!-- Ingresar email -->
+                    <label for="mail">Email</label><br>
+                    <input type="email" id="mail" name="mail" value="Ingresa tu email"><br>
+                    <!-- Seleccionar interes -->
+                    <label for="interes">Area de interes</label><br>
+                    <select name="interes" id="interes">
+                        <optgroup label="Seleccione su area de interes">
+                            <option value="carpinteria">Carpinteria</option>
+                            <option value="metalmecanico">Metal-Mecanica</option>
+                            <option value="seguridad">Implementos de seguridad</option>
+                            <option value="almacenamiento">Almacenamiento</option>
+                        </optgroup>
+                    </select><br>
+                    <!-- Recibir promociones adicionales -->
+                    <label for="promociones">Deseo recibir ofertas de sitios asociados</label><br>
+                    <input type="checkbox" value><br>
+                    <!-- Boton para enviar -->
+                    <input class="botonEnviar" type="submit" value="Enviar">
+                </form>
+            </div>
+            <!-- Redes sociales -->
+            <div class="contenedorRedes container-fluid">
+                <p class="parrafoPie">Siguenos en nuestras redes sociales</p>
+                <ul>
+                    <div class="contenedorLista">
+                        <li><a href="#"><img src="../img/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="../img/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="../img/youtube.png" alt="Youtube"></a></li>
+                    </div>
+                </ul>
+            </div>
 
-        <!-- Sobre nosotros -->
+            <!-- Sobre nosotros -->
 
-        <section class="contacto container-fluid">
-            <p class="parrafoPie">Sobre nosotros</p>
-            <ul class="contactoLista">
-                <li><a href="ayuda.html">Nuestra mision</a></li>
-                <li><a href="ayuda.html">Sucursales</a></li>
-                <li><a href="ayuda.html">Preguntas frecuentes</a></li>
-                <li><a href="ayuda.html">Servicio al cliente</a></li>
-                <li><a href="ayuda.html">Contacto</a></li>
-            </ul>
-        </section>
-        <!-- Copyright -->
-        <div class="copyright">
-            <p class="bold">© Copyright 2022 expertools.com</p>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+            <section class="contacto container-fluid">
+                <p class="parrafoPie">Sobre nosotros</p>
+                <ul class="contactoLista">
+                    <li><a href="ayuda.html">Nuestra mision</a></li>
+                    <li><a href="ayuda.html">Sucursales</a></li>
+                    <li><a href="ayuda.html">Preguntas frecuentes</a></li>
+                    <li><a href="ayuda.html">Servicio al cliente</a></li>
+                    <li><a href="ayuda.html">Contacto</a></li>
+                </ul>
+            </section>
+            <!-- Copyright -->
+            <div class="copyright">
+                <p class="bold">© Copyright 2022 expertools.com</p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

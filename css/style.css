@@ -44,6 +44,9 @@ header {
 .contenedorHeader a{
     color: black;
 }
+.contenedorHeader a:hover{
+    color: white;
+}
 .headerLogo img {
     width: 15rem;
     height: 12rem;
@@ -142,8 +145,8 @@ header {
     gap: 2rem;
 }
 .nav-item {
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
     padding-top: 1.2rem;
     padding-bottom: 2rem; 
 }
@@ -216,6 +219,7 @@ main {
     font-size: 4rem;
     color: var(--naranja);
     text-align: justify;
+    font-weight: bold;
 }
 .containerOfertas{
     background-color: black;
@@ -338,21 +342,24 @@ main {
 
 /** Seccion de marcas en main **/
 
-.contenedorMarcas {
+.mainMarcas {
     background-color: var(--naranja);
     display: flex;
-    padding-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    height: 50rem;
+    height: auto;
+    text-align: center;
 }
-.contenedorMarcas h2 {
+.mainMarcas h2 {
     font-size: 4rem;
-    color: black
+    color: black;
+    font-weight: bold;
 }
-.contenedorMarcas .verMas a {
+.mainMarcas .verMas a {
     color: black;
     font-size: 3rem;
     width: 100%;
@@ -360,7 +367,7 @@ main {
     border: black solid 0.6rem;
     border-radius: 2rem;
 }
-.contenedorMarcas .verMas a:hover{
+.mainMarcas .verMas a:hover{
     background-color: black;
     color: var(--naranja);
     font-size: 3rem;
@@ -369,7 +376,7 @@ main {
     border: black solid 0.6rem;
     border-radius: 2rem;
 }
-.marcas {
+.marcasMain {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -377,8 +384,8 @@ main {
     align-items: center;
     justify-content: space-evenly;
     gap: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 .imgMarcas1 {
     width: 60rem;
@@ -423,25 +430,13 @@ main {
     background-position: center;
 }
 @media only screen and (max-width: 1200px) {
-    .marcas {
+    .marcasMain {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: auto;
     }
-    .contenedorMarcas {
-        background-color: var(--naranja);
-        display: flex;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: space-evenly;
-        width: auto;
-        height: 80rem;
-    }
-    .contenedorMarcas .verMas a {
+    .mainMarcas .verMas a {
         color: black;
         font-size: 3rem;
         width: 100%;
@@ -492,44 +487,44 @@ main {
         background-position: center;
     }
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 500px) {
     .imgMarcas1 {
-        width: 25rem;
+        width: 34rem;
         height: 14rem;
         background: url("../img/makita.jpg") no-repeat;
         background-size: contain;
         background-position: center;
         }
     .imgMarcas1:hover {
-        width: 25rem;
+        width: 34rem;
         height: 14rem;
         background: url("../img/makitahover.jpg") no-repeat;
         background-size: contain;
         background-position: center;
     }
     .imgMarcas2 {
-        width: 25rem;
+        width: 34rem;
         height: 14rem;
         background: url("../img/bauker.jpg") no-repeat;
         background-size: contain;
         background-position: center;
     }
     .imgMarcas2:hover {
-        width: 25rem;
+        width: 34rem;
         height: 14rem;
         background: url("../img/baukerhover.jpg") no-repeat;
         background-size: contain;
         background-position: center;
     }
     .imgMarcas3 {
-        width: 25rem;
+        width: 34rem;
         height: 14rem;
         background: url("../img/b&d.jpg") no-repeat;
         background-size: contain;
         background-position: center;
     }
     .imgMarcas3:hover {
-        width: 25rem;
+        width: 34rem;
         height: 14rem;
         background: url("../img/b&dhover.jpg") no-repeat;
         background-size: contain;
@@ -554,6 +549,7 @@ main {
     color: var(--naranja);
     padding-bottom: 20px;
     font-size: 4rem;
+    font-weight: bold;
 }
 .imgCategorias {
     display: flex;
@@ -766,6 +762,18 @@ select {
     background-color: black;
     color: var(--naranja);
 }
+.botonEnviar:hover{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 1.6rem;
+    padding: 2rem 2rem 2rem 2rem;
+    background-color: black;
+    color: white;
+}
 
 /** Redes sociales **/
 
@@ -819,6 +827,10 @@ select {
     color: var(--naranja);
     font-size: 1.6rem;
 }
+.contactoLista a:hover {
+    color: white;
+    font-size: 1.6rem;
+}
 .parrafoPie {
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
@@ -835,140 +847,397 @@ select {
 
 /** Pagina Categorias **/
 
-.contenedorBusqueda {
-    width: auto;
-    height: 1200px;
-    padding-top: 80px;
+.categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
     background-color: black;
     text-align: middle;
 }
-.barraBuscar{
-    margin-top: 50px;
-    margin-left: 550px;
-    width: 600px;
+.categoriasTitulo {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
-.filtros {
-    margin-left: 00px;
-    margin-right: 300px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 50px;
-    width: 1000px;
-    height: 50px;
+.categoriasTitulo h2 {
+    color: var(--naranja);
+    font-size: 4rem;
+    font-weight: bold;
+}
+.busquedaCategorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.formFlex {
+    display: flex;
+    flex-direction: row;
+}
+.form-control {
+    width: 30rem;
+    height: 5rem;
+    font-weight: bold;
+}
+.busquedaCategorias .btn {
+    background-color: var(--naranja);
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+}
+.busquedaCategorias .btn:hover {
+    background-color: var(--naranja);
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+}
+@media only screen and (max-width: 420px) {
+    .formFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.categoriasCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    gap: 4rem;
+}
+@media only screen and (max-width: 700px) {
+    .categoriasCards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        gap: 4rem;
+    }
+    #cardCategoria {
+        text-align: center;
+        width:25rem;
+    }
+}
+.card {
+    width: 18rem;
     text-align: center;
 }
-.filtros li a{
-    padding-left: 30px;
-    color: rgb(203, 102, 28);
-    padding-right: 30px;
-    text-decoration: none;
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.contenedorBusqueda {
-    height: 800px;
-}
-.contenedorBusqueda li {
-    float: left;
-    list-style: none;
-}
-.contenedorObjeto {
-    text-align: center;
-    width: 300px;
-}
-.contenedorObjeto p{
-    color: rgb(203, 102, 28);
-    font-size: 20px;
+.card-title {
     font-weight: bold;
-    padding-top: 10px;
-    margin-bottom: 10px;
+    font-size: 2rem;
 }
-.listaCategorias{
-    margin-left: 300px;
+.card-text {
+    font-size: 1.5rem;
 }
-.tituloPagina {
-    margin-left: 700px;
-    margin-right: 700px;
-    font-size: 70px;
+.botonCategorias {
+    background-color: var(--naranja);
     font-weight: bold;
-    color: rgb(203, 102, 28) ;
+    font-size: 1.3rem;
+    border: none;
 }
-.contenedorProductos {
-    height: 800px;
+.botonCategorias:hover {
     background-color: black;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: none;
 }
-.contenedorItem {
-    height: 370px;
-    width: 250px;
-    margin-right: 20px;
+.vermasCategorias {
+    text-align: center;
+    padding-bottom: 3rem;
 }
-.contenedorItem a{
+.vermasCategorias a{
+    background-color: black;
+    color: var(--naranja);
+    border: var(--naranja) solid 0.6rem;
+    border-radius: 2rem;
+    font-size: 3rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.vermasCategorias a:hover{
+    background-color: var(--naranja);
+    color: black;
+    border: var(--naranja) solid 0.6rem;
+    border-radius: 2rem;
+    font-size: 3rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+/** Pagina Marcas **/
+
+.marcas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    text-align: middle;
+}
+.marcasTitulo {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.marcasTitulo h2 {
+    color: var(--naranja);
+    font-size: 4rem;
+    font-weight: bold;
+}
+.busquedaMarcas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.formFlex {
+    display: flex;
+    flex-direction: row;
+}
+.form-control {
+    width: 30rem;
+    height: 5rem;
+    font-weight: bold;
+}
+.busquedaMarcas .btn {
+    background-color: var(--naranja);
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+}
+.busquedaMarcas .btn:hover {
+    background-color: var(--naranja);
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+}
+@media only screen and (max-width: 420px) {
+    .formFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form-control {
+        width: 20rem;
+        height: 5rem;
+        font-weight: bold;
+    }
+}
+.marcasCards {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    "card1 card2 card5"
+    "card3 card4 card5";
+    gap: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 100%;
+}
+.cardMarca1{
+    grid-area: card1;
+}
+.cardMarca2{
+    grid-area: card2;
+}
+.cardMarca3{
+    grid-area: card3;
+}
+.cardMarca4{
+    grid-area: card4;
+}
+.cardMarca5{
+    grid-area: card5;
+}
+.marcaDestacada {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    background-color: white;
+    padding: 1rem;
+}
+.destacadaLogo {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: 4rem;
+    align-items: center;
+    justify-self: center;
+}
+.destacadaLogo img{
+    width: 100%;
+    height: 100%;
+}
+.tituloDestacada{
     background-color: white;
 }
-.listaItems{
-    margin-left: 200px;
-}
-.listaItems li {
-    float: left;
-    list-style-type: none;
-}
-.encabezado {
-    text-align: center;
-    background-color: rgb(203, 102, 28);
-}
-.encabezado p {
-    color: black;
+.tituloDestacada h2{
+    height: 1rem;
     font-weight: bold;
-}
-.bajada {
-    text-align: center;
-    background-color: rgb(203, 102, 28);
-}
-.bajada p {
+    font-size: 2rem;
     color: black;
-    font-weight: bold;
 }
-
-/** Pagina Marca **/
-
-.descripcionMarca {
-    height: 800px;
+.tituloDestacada p{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+#imagenDestacada {
+    width: 50rem;
+    height: 50rem;
+}
+.textoDestacado p{
+    background-color: white;
+    font-size: 1.8rem;
+    width: 50rem;
+    height: 100%;
+    text-align: justify;
+}
+@media only screen and (max-width: 918px) {
+    .marcasCards {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .cardMarca1{
+        grid-area: card1;
+    }
+    .cardMarca2{
+        grid-area: card2;
+    }
+    .cardMarca3{
+        grid-area: card3;
+    }
+    .cardMarca4{
+        grid-area: card4;
+    }
+    .cardMarca5{
+        grid-area: card5;
+    }
+    #cardMarca {
+        text-align: center;
+        width:25rem;
+    }
+    .marcaDestacada {
+        display: flex;
+        flex-direction: column;        
+        width: 100%;
+        text-align: center;
+    }
+    #imagenDestacada {
+        width: 100%;
+        height: 100%;
+    }
+    .textoDestacado p{
+        background-color: white;
+        font-size: 1.8rem;
+        width: 100%;
+        text-align: justify;
+        padding-top: 3rem;
+    }
+    .tituloDestacada p{
+        font-size: 2.6rem;
+        font-weight: bold;
+    }
+    .tituloDestacada h2{
+        height: 1rem;
+        font-weight: bold;
+        font-size: 2rem;
+        color: black;
+        padding-bottom: 4rem;
+        padding-top: 3rem;
+    }
+}
+.card {
+    width: 18rem;
+    text-align: center;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-title {
+    font-weight: bold;
+    font-size: 2rem;
+}
+.card-text {
+    font-size: 1.5rem;
+}
+.botonCategorias {
+    background-color: var(--naranja);
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: none;
+}
+.botonCategorias:hover {
     background-color: black;
-    text-align: center;
-}
-.fichaMarca {
-    background-color: rgb(203, 102, 28);
-    width: 500px;
-    padding: 10px 10px 10px 10px;
-    height: 300px;
-    margin-left: 665px;
-}
-.fichaMarca p {
-    padding-bottom: 60px;
-}
-.fichaMarca a{
-    font-size: 30px;
     font-weight: bold;
-    text-decoration: none;
+    font-size: 1.3rem;
+    border: none;
+}
+.vermasMarcas {
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+}
+.vermasMarcas a{
+    background-color: black;
+    color: var(--naranja);
+    border: var(--naranja) solid 0.6rem;
+    border-radius: 2rem;
+    font-size: 3rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.vermasMarcas a:hover{
+    background-color: var(--naranja);
     color: black;
-}
-
-/** Pagina Novedades **/
-
-.destacado {
-    margin-left: 410px;
-}
-.destacado img {
-    width: 120%;
-    height: 110%;
-}
-.destacado p{
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    margin-left: 80px;
-    font-size: 30px;
-    color: rgb(203, 102, 28);
-    border: rgb(203, 102, 28) solid 5px;
-    border-radius: 10px;
+    border: var(--naranja) solid 0.6rem;
+    border-radius: 2rem;
+    font-size: 3rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 /** Pagina Ofertas **/
