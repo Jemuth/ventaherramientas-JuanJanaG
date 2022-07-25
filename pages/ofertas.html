@@ -84,50 +84,57 @@
     <main>
 
         <!-- Barra de busqueda -->
-
-        <div class="busquedaOfertas">
-            <p>Ofertas</p>
-            <div class="barraOfertas">
-                <input type="text" placeholder="Buscar...">
+        <div class="ofertasContainer">
+            <div class="ofertasTitulo">
+                <h2>Ofertas</h2>
             </div>
-            <div>
+            <div class="busquedaOfertas">
+                <form class="formFlex">
+                    <input class="form-control me-2" type="search" placeholder="Ingresa nombre de producto o marca"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+
+            <!-- Seccion destacado -->
+
+            <div class="destacadosOfertas">
                 <ul>
-                    <li><a target="_blank">Filtro 1</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 2</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 3</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 4</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 5</a><input type="checkbox"></li>
+                    <li>
+                        <div class="productoDestacado">
+                            <div>
+                                <a href="#"><img src="../img/accesoriosoferta.jpg" alt="accesorios"></a>
+                            </div>
+                            <div>
+                                <p>Solo por hoy!</p>
+                            </div>
+                        </div>
+                        <div class="productoDestacado">
+                            <div>
+                                <a href="#"><img src="../img/accesoriosoferta.jpg" alt="accesorios"></a>
+                            </div>
+                            <div>
+                                <p>Hasta agotar stock</p>
+                            </div>
+                        </div>
+                        <div class="productoDestacado">
+                            <div>
+                                <a href="#"><img src="../img/accesoriosoferta.jpg" alt="accesorios"></a>
+                            </div>
+                            <div>
+                                <p>Destacada</p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
-
-        <!-- Seccion destacado -->
-
-        <div class="destacadosOfertas">
-            <ul>
-                <li>
-                    <div class="productoDestacado">
-                        <a href="#"><img src="../img/accesoriosoferta.jpg" alt="accesorios"></a>
-                        <p>Destacada</p>
-                    </div>
-                    <div class="productoDestacado">
-                        <a href="#"><img src="../img/accesoriosoferta.jpg" alt="accesorios"></a>
-                        <p>Destacada</p>
-                    </div>
-                    <div class="productoDestacado">
-                        <a href="#"><img src="../img/accesoriosoferta.jpg" alt="accesorios"></a>
-                        <p>Destacada</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
         <!-- Productos -->
 
-        <div class="contenedorOfertas">
-            <ul class="productosOferta">
+        <div class="ofertasFlex">
+            <ul class="listadoPaginaofertas">
                 <li>
-                    <div class="contenedorOferta contenedorOferta1">
+                    <div class="contenedorPaginaoferta contenedorPaginaoferta1">
                         <div class="textoOferta">
                             <p>Marca</p>
                             <p>Tipo de herramienta</p>
@@ -139,7 +146,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="contenedorOferta contenedorOferta2">
+                    <div class="contenedorPaginaoferta contenedorPaginaoferta2">
                         <div class="textoOferta">
                             <p>Marca</p>
                             <p>Tipo de herramienta</p>
@@ -151,7 +158,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="contenedorOferta contenedorOferta3">
+                    <div class="contenedorPaginaoferta contenedorPaginaoferta3">
                         <div class="textoOferta">
                             <p>Marca</p>
                             <p>Tipo de herramienta</p>
@@ -163,7 +170,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="contenedorOferta contenedorOferta4">
+                    <div class="contenedorPaginaoferta contenedorPaginaoferta4">
                         <div class="textoOferta">
                             <p>Marca</p>
                             <p>Tipo de herramienta</p>
@@ -175,7 +182,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="contenedorOferta contenedorOferta5">
+                    <div class="contenedorPaginaoferta contenedorPaginaoferta5">
                         <div class="textoOferta">
                             <p>Marca</p>
                             <p>Tipo de herramienta</p>
@@ -187,7 +194,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="contenedorOferta contenedorOferta6">
+                    <div class="contenedorPaginaoferta contenedorPaginaoferta6">
                         <div class="textoOferta">
                             <p>Marca</p>
                             <p>Tipo de herramienta</p>
@@ -199,7 +206,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="contenedorOferta contenedorOferta7">
+                    <div class="contenedorPaginaoferta contenedorPaginaoferta7">
                         <div class="textoOferta">
                             <p>Marca</p>
                             <p>Tipo de herramienta</p>
@@ -211,7 +218,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="contenedorOferta contenedorOferta8">
+                    <div class="contenedorPaginaoferta contenedorPaginaoferta8">
                         <div class="textoOferta">
                             <p>Marca</p>
                             <p>Tipo de herramienta</p>
@@ -223,7 +230,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="contenedorOferta contenedorOferta8">
+                    <div class="contenedorPaginaoferta contenedorPaginaoferta9">
                         <div class="textoOferta">
                             <p>Marca</p>
                             <p>Tipo de herramienta</p>
@@ -236,7 +243,7 @@
                 </li>
             </ul>
         </div>
-        </div>
+
     </main>
     <footer>
         <!-- Formulario de subscripcion -->
