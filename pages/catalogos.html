@@ -79,59 +79,69 @@
         </nav>
     </header>
     <main>
-        <div class="contenedorBusqueda">
-            <p class="tituloPagina">Catalogos</p>
-            <input class="barraBuscar" type="text" placeholder="Buscar...">
-            <div class="filtros">
-                <ul>
-                    <li><a target="_blank">Filtro 1</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 2</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 3</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 4</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 5</a><input type="checkbox"></li>
-                </ul>
+        <div class="catalogosContainer">
+            <div class="catalogosTitulo">
+                <h2>Catálogos</h2>
             </div>
-            <div class="listaCategorias">
+            <div class="busquedaCatalogos">
+                <form class="formFlex">
+                    <input class="form-control me-2" type="search" placeholder="Ingresa nombre de producto o marca"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+            <div class="catalogosLista container-fluid">
                 <ul>
                     <li>
-                        <div class="contenedorObjeto">
+                        <div class="contenedorCatalogo">
                             <a href="#"><img src="../img/makitalogo.jpg" alt="accesorios"></a>
                             <p>Catalogos Makita</p>
                         </div>
                     </li>
                     <li>
-                        <div class="contenedorObjeto">
+                        <div class="contenedorCatalogo">
                             <a href="#"><img src="../img/dremel.jpg" alt="electricas"></a>
                             <p>Catalogos Dremel</p>
                         </div>
                     </li>
                     <li>
-                        <div class="contenedorObjeto">
+                        <div class="contenedorCatalogo">
                             <a href="#"><img src="../img/blackdecker.jpg" alt="manuales"></a>
-                            <p>Catalogos Black & Decker</p>
+                            <p>Catalogos B&D</p>
                         </div>
                     </li>
                     <li>
-                        <div class="contenedorObjeto">
+                        <div class="contenedorCatalogo">
                             <a href="#"><img src="../img/cat.jpg" alt="epp"></a>
                             <p>Catalogos CAT</p>
                         </div>
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="descripcionCatalogo">
-            <p id="tituloCatalogo">Destacado</p>
-            <img src="../img/catalogo.png" alt="catalogo">
-            <div class="fichaCatalogo">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi augue, consectetur sit amet
-                    risus ac, tincidunt pretium dui. Fusce vulputate semper libero sodales eleifend. Etiam et neque
-                    fringilla nunc varius finibus. Praesent fringilla diam eu orci laoreet elementum. Fusce dapibus
-                    justo vitae justo mattis viverra. Praesent eleifend metus quis sagittis efficitur. Donec bibendum
-                    vel velit ut faucibus. Aliquam non erat est. </p>
-                <a href="catalogos.html">Ver el catalogo</a>
+            <div class="destacadoCatalogo container-fluid">
+                <div>
+                    <h2>Destacado</h2>
+                </div>
+                <div class="catalogoImg">
+                    <img src="../img/catalogo.png" alt="catalogo">
+                </div>
+                <div class="fichaCatalogo">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi augue, consectetur sit
+                            amet
+                            risus ac, tincidunt pretium dui. Fusce vulputate semper libero sodales eleifend. Etiam et
+                            neque
+                            fringilla nunc varius finibus. Praesent fringilla diam eu orci laoreet elementum. Fusce
+                            dapibus
+                            justo vitae justo mattis viverra. Praesent eleifend metus quis sagittis efficitur. Donec
+                            bibendum
+                            vel velit ut faucibus. Aliquam non erat est. </p>
+                    </div>
+                    <div>
+                        <a href="catalogos.html">Ver el catalogo</a>
+                    </div>
+                </div>
             </div>
-        </div>
         </div>
     </main>
     <footer>

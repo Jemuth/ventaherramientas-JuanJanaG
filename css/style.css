@@ -489,42 +489,42 @@ main {
 }
 @media only screen and (max-width: 500px) {
     .imgMarcas1 {
-        width: 34rem;
+        width: 27rem;
         height: 14rem;
         background: url("../img/makita.jpg") no-repeat;
         background-size: contain;
         background-position: center;
         }
     .imgMarcas1:hover {
-        width: 34rem;
+        width: 27rem;
         height: 14rem;
         background: url("../img/makitahover.jpg") no-repeat;
         background-size: contain;
         background-position: center;
     }
     .imgMarcas2 {
-        width: 34rem;
+        width: 27rem;
         height: 14rem;
         background: url("../img/bauker.jpg") no-repeat;
         background-size: contain;
         background-position: center;
     }
     .imgMarcas2:hover {
-        width: 34rem;
+        width: 27rem;
         height: 14rem;
         background: url("../img/baukerhover.jpg") no-repeat;
         background-size: contain;
         background-position: center;
     }
     .imgMarcas3 {
-        width: 34rem;
+        width: 27rem;
         height: 14rem;
         background: url("../img/b&d.jpg") no-repeat;
         background-size: contain;
         background-position: center;
     }
     .imgMarcas3:hover {
-        width: 34rem;
+        width: 27rem;
         height: 14rem;
         background: url("../img/b&dhover.jpg") no-repeat;
         background-size: contain;
@@ -1596,32 +1596,165 @@ select {
 
 /** Pagina Catalogos **/
 
-.descripcionCatalogo {
+.catalogosContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
     background-color: black;
-    height: 1500px;
+    text-align: middle;
+}
+.catalogosTitulo {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.catalogosTitulo h2 {
+    color: var(--naranja);
+    font-size: 4rem;
+    font-weight: bold;
+}
+.busquedaCatalogos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+.formFlex {
+    display: flex;
+    flex-direction: row;
+}
+.form-control {
+    width: 30rem;
+    height: 5rem;
+    font-weight: bold;
+}
+.busquedaCatalogos .btn {
+    background-color: var(--naranja);
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+}
+.busquedaCatalogos .btn:hover {
+    background-color: var(--naranja);
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+}
+@media only screen and (max-width: 420px) {
+    .formFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form-control {
+        width: 20rem;
+        height: 5rem;
+        font-weight: bold;
+    }
+}
+.catalogosLista ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 3rem;
+    gap: 3rem;
+}
+.catalogosLista img {
+    width: 100%;
+    height: auto;
+}
+.contenedorCatalogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedorCatalogo p{
+    color: var(--naranja);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.destacadoCatalogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 5rem;
+    width: 100%;
+}
+.destacadoCatalogo h2 {
+    color: var(--naranja);
+    font-size: 3rem;
+    font-weight: bold;
+}
+.catalogoImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+.catalogoImg img{
+    width: 50rem;
+    height: 100%;
+}
+.destacadoCatalogo p{
+    color: black;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: justify;
+}
+.destacadoCatalogo a{
+    color: black;
+    font-size: 2rem;
     text-align: center;
 }
-.descripcionCatalogo p {
-    color: black;
-    font-weight: bold;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.descripcionCatalogo a {
-    color: black;
-    font-weight: bold;
-    font-size: 30px;
-}
-#tituloCatalogo{
-    color:rgb(203, 102, 28);
-    font-size: 30px;
-    font-weight: bold;
+.destacadoCatalogo a:hover{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
 }
 .fichaCatalogo {
-    background-color: rgb(203, 102, 28);
-    width: 600px;
-    height: 250px;
-    margin-left: 660px;
+    background-color: var(--naranja);
+    width: 100%;
+    max-width: 50rem;
+    padding-bottom: 3rem;
+}
+@media only screen and (max-width: 533px) {
+    .fichaCatalogo {
+        background-color: var(--naranja);
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+    .catalogoImg {
+        width: 100%;
+        height: auto;
+        padding-bottom: 5rem;
+    }
+    .catalogoImg img{
+        width: 100%;
+        height: auto;
+    }
+    .catalogosLista ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 3rem;
+        gap: 3rem;
+    }
 }
 
 /** Pagina Iniciar sesion **/
