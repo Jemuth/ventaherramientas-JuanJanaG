@@ -1444,6 +1444,155 @@ select {
     width: 100%;
     padding: 1rem;
 }
+/** Pagina Novedades **/
+.novedadesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    text-align: middle;
+}
+.novedadesTitulo {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.novedadesTitulo h2 {
+    color: var(--naranja);
+    font-size: 4rem;
+    font-weight: bold;
+}
+.busquedaNovedades {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.formFlex {
+    display: flex;
+    flex-direction: row;
+}
+.form-control {
+    width: 30rem;
+    height: 5rem;
+    font-weight: bold;
+}
+.busquedaNovedades .btn {
+    background-color: var(--naranja);
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+}
+.busquedaNovedades .btn:hover {
+    background-color: var(--naranja);
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+}
+@media only screen and (max-width: 420px) {
+    .formFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form-control {
+        width: 20rem;
+        height: 5rem;
+        font-weight: bold;
+    }
+}
+.contenedorNovedades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+.carousel-inner img {
+    margin: auto;
+  }
+.carousel-control-prev {
+    margin-left: auto;
+}
+.carousel-control-next {
+    margin-right: auto;
+}
+.carouselImg {
+    width: 40rem;
+    height: 35rem;
+}
+@media only screen and (max-width: 775px) {
+    .carousel-control-prev {
+        margin-left: auto;
+    }
+    .carousel-control-next {
+        margin-right: auto;
+    }
+    .carouselImg {
+        width: 25rem;
+        height: auto;
+    }
+}
+.novedadesTexto {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding-top: 2rem;
+    width: 100%;
+}
+.novedadesTexto a{
+    background-color: black;
+    border: var(--naranja) solid 0.6rem;
+    border-radius: 2rem;
+    color: var(--naranja);
+    font-size: 3rem;
+    font-weight: bold;
+    width: auto;
+    padding: 2rem;
+}
+.novedadesTexto a:hover{
+    background-color: var(--naranja);
+    border: var(--naranja) solid 0.6rem;
+    border-radius: 2rem;
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    width: auto;
+    padding: 2rem;
+}
+@media only screen and (max-width: 420px) {
+    .novedadesTexto a{
+        background-color: black;
+        border: var(--naranja) solid 0.6rem;
+        border-radius: 2rem;
+        color: var(--naranja);
+        font-size: 2rem;
+        font-weight: bold;
+        width: auto;
+        padding: 2rem;
+    }
+    .novedadesTexto a:hover{
+        background-color: var(--naranja);
+        border: var(--naranja) solid 0.6rem;
+        border-radius: 2rem;
+        color: black;
+        font-size: 2rem;
+        font-weight: bold;
+        width: auto;
+        padding: 2rem;
+    }
+}
 
 /** Pagina Catalogos **/
 
@@ -1478,62 +1627,188 @@ select {
 /** Pagina Iniciar sesion **/
 
 .contenedorSesion {
+    display: flex;
+    flex-direction: column;
     background-color: black;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-bottom: 5rem;
+    height: auto;
+}
+.contenedorSesion h2{
+    font-size: 3rem;
     font-weight: bold;
-    font-size: 30px;
-    padding-top: 40px;
-    padding-left: 30px;
-    color: rgb(203, 102, 28);
-    height: 700px;
+    color: var(--naranja);
+}
+.contenedorSesion form{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--naranja);
 }
 .botonLogear {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    width: 200px;
-    height: 80px;
-    border: rgb(203, 102, 28) solid 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding:2rem;
+    width: auto;
+    height: auto;
+    border: var(--naranja) solid 5px;
     border-radius: 20px;
     background-color: black;
-    color: rgb(203, 102, 28);
-    margin-top: 10px;
-    margin-bottom: 10px;
+    color: var(--naranja);
+}
+.botonLogear:hover{
+    font-size: 2rem;
+    font-weight: bold;
+    padding:2rem;
+    width: auto;
+    height: auto;
+    border: rgb(203, 102, 28) solid 5px;
+    border-radius: 20px;
+    background-color: var(--naranja);
+    color: black;
 }
 .botonCrear {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    width: 400px;
-    height: 80px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem;
+    width: auto;
+    height: auto;
     border: rgb(203, 102, 28) solid 5px;
     border-radius: 20px;
     background-color: black;
     color: rgb(203, 102, 28);
-    margin-top: 10px;
-    margin-bottom: 10px;
+}
+.botonCrear:hover {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem;
+    width: auto;
+    height: auto;
+    border: rgb(203, 102, 28) solid 5px;
+    border-radius: 20px;
+    background-color: var(--naranja);
+    color: black;
+}
+@media only screen and (max-width: 420px) {
+    .contenedorSesion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        padding-top: 5rem;
+        padding-left: 0;
+        padding-bottom: 5rem;
+        height: auto;
+        width: 100%;
+    }
 }
 
 /** Pagina Ayuda **/
 
-.temasAyuda {
-    background-color: black;
-    height: 800px;
-    padding-left: 50px;
-    color: rgb(203, 102, 28);
-}
-.busquedaAyuda {
-    width: auto;
-    height: 400px;
-    padding-top: 80px;
+
+.ayudaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
     background-color: black;
     text-align: middle;
 }
+.ayudaTitulo {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.ayudaTitulo h2 {
+    color: var(--naranja);
+    font-size: 4rem;
+    font-weight: bold;
+}
+.busquedaAyuda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+.formFlex {
+    display: flex;
+    flex-direction: row;
+}
+.form-control {
+    width: 30rem;
+    height: 5rem;
+    font-weight: bold;
+}
+.busquedaAyuda .btn {
+    background-color: var(--naranja);
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+}
+.busquedaAyuda .btn:hover {
+    background-color: var(--naranja);
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+}
+@media only screen and (max-width: 420px) {
+    .formFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form-control {
+        width: 20rem;
+        height: 5rem;
+        font-weight: bold;
+    }
+}
 .tituloAyuda {
-    font-size: 40px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.temasAyuda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    color: var(--naranja);
+    padding-bottom: 5rem;
 }
 .listaTemas {
-    padding-top: 20px;
-    font-size: 20px;
+    font-size: 1.8rem;
     list-style: none;
-    padding-right: 200px;
+}
+@media only screen and (max-width: 420px) {
+    .temasAyuda {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: black;
+        width: 100%;
+        height: auto;
+        color: var(--naranja);
+        padding-bottom: 5rem;
+    }
+    .listaTemas {
+        font-size: 1.8rem;
+        width: 100%;
+        padding: 1rem;
+        list-style: none;
+    }
 }
 
 /** Pagina Estilo del boton **/
@@ -1552,10 +1827,19 @@ select {
 .contenedorCarro {
     text-align: center;
     background-color: black;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    height: auto;
+}
+.contenedorCarro p{
     font-weight: bold;
-    font-size: 30px;
-    padding-top: 40px;
-    padding-left: 30px;
+    font-size: 3rem;
     color: rgb(203, 102, 28);
-    height: 700px;
+    width: 100%;
+    height: auto;
+}
+.contenedorCarro img{
+    max-width: 60rem;
+    width: 100%;
 }

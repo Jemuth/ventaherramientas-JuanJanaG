@@ -79,129 +79,52 @@
         </nav>
     </header>
     <main>
-        <div class="contenedorBusqueda">
-            <p class="tituloPagina">Novedades</p>
-            <input class="barraBuscar" type="text" placeholder="Buscar...">
-            <div class="filtros">
-                <ul>
-                    <li><a target="_blank">Filtro 1</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 2</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 3</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 4</a><input type="checkbox"></li>
-                    <li><a target="_blank">Filtro 5</a><input type="checkbox"></li>
-                </ul>
+        <div class="novedadesContainer">
+            <div class="novedadesTitulo">
+                <h2>Novedades</h2>
             </div>
-            <div class="listaCategorias">
-                <ul>
-                    <li>
-                        <div class="destacado">
-                            <a href="#"><img src="../img/accesorios.jpg" alt="accesorios"></a>
-                            <p>Destacado</p>
-                        </div>
-                    </li>
-                </ul>
+            <div class="busquedaNovedades">
+                <form class="formFlex">
+                    <input class="form-control me-2" type="search" placeholder="Ingresa nombre de producto o marca"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
             </div>
-        </div>
-        <div class="contenedorProductos">
-            <div class="listaItems">
-                <ul>
-                    <li>
-                        <div class="contenedorItem">
-                            <div class="encabezado">
-                                <p>Marca</p>
-                                <p>Tipo de herramienta</p>
-                            </div>
-                            <a href="#"><img src="../img/electricas.jpg" alt="electricas"></a>
-                            <div class="bajada">
-                                <p>Ver ficha tecnica</p>
-                            </div>
+            <div class="contenedorNovedades">
+                <div id="carouselExampleControls" class="carousel slide w-auto" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="ofertas.html">
+                                <img class="carouselImg d-block" src="../img/electricas.jpg" alt="...">
+                            </a>
                         </div>
-                    </li>
-                    <li>
-                        <div class="contenedorItem">
-                            <div class="encabezado">
-                                <p>Marca</p>
-                                <p>Tipo de herramienta</p>
-                            </div>
-                            <a href="#"><img src="../img/electricas.jpg" alt="electricas"></a>
-                            <div class="bajada">
-                                <p>Ver ficha tecnica</p>
-                            </div>
+                        <div class="carousel-item">
+                            <a href="ofertas.html">
+                                <img class="carouselImg d-block" src="../img/electricas.jpg" alt="...">
+                            </a>
                         </div>
-                    </li>
-                    <li>
-                        <div class="contenedorItem">
-                            <div class="encabezado">
-                                <p>Marca</p>
-                                <p>Tipo de herramienta</p>
-                            </div>
-                            <a href="#"><img src="../img/electricas.jpg" alt="electricas"></a>
-                            <div class="bajada">
-                                <p>Ver ficha tecnica</p>
-                            </div>
+                        <div class="carousel-item">
+                            <a href="ofertas.html">
+                                <img class="carouselImg d-block" src="../img/electricas.jpg" alt="...">
+                            </a>
                         </div>
-                    </li>
-                    <li>
-                        <div class="contenedorItem">
-                            <div class="encabezado">
-                                <p>Marca</p>
-                                <p>Tipo de herramienta</p>
-                            </div>
-                            <a href="#"><img src="../img/electricas.jpg" alt="electricas"></a>
-                            <div class="bajada">
-                                <p>Ver ficha tecnica</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorItem">
-                            <div class="encabezado">
-                                <p>Marca</p>
-                                <p>Tipo de herramienta</p>
-                            </div>
-                            <a href="#"><img src="../img/electricas.jpg" alt="electricas"></a>
-                            <div class="bajada">
-                                <p>Ver ficha tecnica</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorItem">
-                            <div class="encabezado">
-                                <p>Marca</p>
-                                <p>Tipo de herramienta</p>
-                            </div>
-                            <a href="#"><img src="../img/electricas.jpg" alt="electricas"></a>
-                            <div class="bajada">
-                                <p>Ver ficha tecnica</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorItem">
-                            <div class="encabezado">
-                                <p>Marca</p>
-                                <p>Tipo de herramienta</p>
-                            </div>
-                            <a href="#"><img src="../img/electricas.jpg" alt="electricas"></a>
-                            <div class="bajada">
-                                <p>Ver ficha tecnica</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contenedorItem">
-                            <div class="encabezado">
-                                <p>Marca</p>
-                                <p>Tipo de herramienta</p>
-                            </div>
-                            <a href="#"><img src="../img/electricas.jpg" alt="electricas"></a>
-                            <div class="bajada">
-                                <p>Ver ficha tecnica</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="novedadesTexto">
+                    <a href="#">
+                        Ver reseña de artículo
+                    </a>
+                </div>
             </div>
         </div>
     </main>
